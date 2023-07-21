@@ -25,7 +25,7 @@ function App() {
         ]
       },
       {
-          name: 'Holly Baird',
+          name:'Holly Baird',
           bio: 'Eum molestiae explicabo deserunt, maiores quod eaque omnis tenetur vero ducimus, magnam autem! Quia facere quaerat eum repudiandae dolorum eligendi iure quae. Eos id possimus accusantium, earum animi modi hic.',
           scores: [
             {
@@ -71,6 +71,9 @@ function App() {
     <div className="App">
       <h1> Students Data </h1>
       
+        {studentData.students.map((student) =>{
+       return <Student student={student}/>;
+     })}       
     </div>
   );
 }

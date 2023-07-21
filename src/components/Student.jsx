@@ -3,7 +3,10 @@ import Score from './Score'
 
 function Student(props) {
   return (
-    <div>Student</div>
+    <div className='studentInfo'>
+        <h1> {props.student.name} </h1>
+        <p> {props.student.bio} </p>
+    </div>
   )
 }
 
