@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react'; //Used to update and track data when needed
 import Student from './components/Student';
+import Score from './components/Score';
 
 function App() {
   //initializing  the useState /( Declaring a variable and the function that updates it)
@@ -69,11 +70,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1> Students Data </h1>
-      
-        {studentData.students.map((student) =>{
-       return <Student student={student}/>;
-     })}       
+      <h1> Students Data </h1>   
+        {studentData.students.map((studentInfo) =>{
+       return <Student studentInfo={studentInfo}/>;
+     })}  
     </div>
   );
 }
