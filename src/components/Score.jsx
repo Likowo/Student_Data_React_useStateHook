@@ -4,8 +4,18 @@ import React from 'react'
 function Score(props) {
   return (
     <div className='studentScore' >
-        <h3> Student Score:{props.scoresInfo.score} </h3>
-        <h3> Date Score Graded:{props.scoresInfo.date} </h3>
+      <div className='topPage'>
+        <div className='stuScore'> Student Score:</div>
+         <div className='scoreNumber'>{props.scoresInfo.score}</div>  
+      </div>
+       
+       <div className='bottomPage'>
+          <div className='dateGradedHeader'> Date Score Graded: </div>
+          <div className='dateGraded'> {props.scoresInfo.date} </div>
+       </div>
+
+        
+
     </div>
   )
     

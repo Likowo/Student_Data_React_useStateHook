@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <h1> Students Data </h1>
+      <div className="studentDataWrapper">
       {studentData.students.map((studentInfo,i) => {
         return (
           <Student key={i} studentInfo={studentInfo}/>
@@ -23,6 +24,8 @@ function App() {
         
         
       })}
+      </div>
+      
     </div>
   );
 }
